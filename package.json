@@ -1,0 +1,37 @@
+{
+  "name": "@makina-corpus/mapbox-gl-forbidden-area",
+  "version": "1.0.0",
+  "description": "Disable events on feature collection",
+  "repository": "github:makinacorpus/mapbox-gl-forbidden-area",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "rollup -c rollup.config.dev.js --watch",
+    "build": "rollup -c rollup.config.prod.js",
+    "prepare": "npm run build"
+  },
+  "author": "bastien.alvez@makina-corpus.com",
+  "license": "MIT",
+  "dependencies": {
+    "@turf/buffer": "^6.5.0",
+    "@turf/nearest-point-on-line": "^6.5.0",
+    "@turf/polygon-to-line": "^6.5.0"
+  },
+  "peerDependencies": {
+    "mapbox-gl": ">=1.0.0 <2.0.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^20.0.0",
+    "@rollup/plugin-html": "^0.2.0",
+    "@rollup/plugin-node-resolve": "^13.0.5",
+    "@rollup/plugin-typescript": "^8.2.5",
+    "@types/geojson": "^7946.0.7",
+    "@types/mapbox-gl": "^1.13.2",
+    "mapbox-gl": "^1.13.1",
+    "prettier": "^2.1.2",
+    "rollup": "^2.29.0",
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-serve": "^1.0.4",
+    "tslib": "^2.0.2",
+    "typescript": "^3.9.3"
+  }
+}
